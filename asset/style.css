@@ -15,7 +15,19 @@
 .pt-50{
     padding-top: 50px !important;
 }
-
+.mg-50{
+    margin: -50px 0 !important;
+}
+.border-card{
+    box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%) !important;
+    border-radius: 6px !important;
+}
+.cl-b{
+    color: #000c04 !important;
+}
+.cl-w{
+    color: #fff !important;
+}
 
 .title-top{
     text-align: center;
@@ -26,9 +38,6 @@
     font-weight: 600;
     color: #f53626;
 }
-.cl-b{
-    color: #000c04;
-}
 .title-bot{
     font-size: 40px;
     font-weight: 600;
@@ -36,16 +45,38 @@
     text-transform: capitalize;
     color: #000c04;
     text-align: center;
+    margin-bottom: 48px;
 }
 .bg-t{
     background-color:#189A46;
 }
 
+.p{    
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+    font-family: 'Jost', sans-serif;
+    
+}
 
+.btn-style{
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius:10px;
+    color: #fff;
+    background:#189A46;
+    border: none;
+}
 
-
-
-
+.border-btn-left button:focus{
+    background:#116E32 !important;
+    border-color: #189A46 !important ;
+    color: #fff;
+}
 
 
 
@@ -60,8 +91,9 @@
     display: flex;
 }
 .number-item{
-    width: 25%;
-    text-align: center;;
+    text-align: center;
+    border-radius: 8px;
+    
 }
 .number-item h4{
     font-size: 20px;
@@ -90,12 +122,71 @@
 .card-content{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap:  5px;
 }
 .card-item{
     border-radius: 6px;
     background-color: #fff;
     text-align: center;
+    
+}
+
+.card-top{
+    padding: 48px 40px 8px 40px;
+} 
+.card-top h5{
+    font-size: 15px;
+    line-height: 20px;
+    color:#189A46;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius:12px;
+    margin-top: 30px;
+}
+.card-top h4{
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    color:#189A46;
+}
+.card-top span{
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+.card-top label{
+    font-size: 25px;
+    vertical-align: text-top;
 }
 .list-card{
     list-style: none;
+}
+.card-bot{
+    padding: 32px 40px 56px 40px;
+}
+
+.card-bot ul{
+    margin-bottom: 5px;
+    color: #304659;
+}
+.card-bot li{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    align-self: center;
+    padding-top: 6px;
+}
+.card-bot button{
+    margin-top: 32px;
+}
+.card-bot button:focus{
+    box-shadow: 0 0 0 0.2rem rgb(15 162 67 / 65%);
 }
