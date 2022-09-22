@@ -26,6 +26,9 @@
     font-weight: 600;
     color: #f53626;
 }
+.cl-b{
+    color: #000c04;
+}
 .title-bot{
     font-size: 40px;
     font-weight: 600;
@@ -34,7 +37,9 @@
     color: #000c04;
     text-align: center;
 }
-
+.bg-t{
+    background-color:#189A46;
+}
 
 
 
@@ -78,4 +83,19 @@
 
 .plan{
     background-color: rgba(147, 107, 232, 0.05);
+}
+.plan-content{
+    
+}
+.card-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.card-item{
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+}
+.list-card{
+    list-style: none;
 }
