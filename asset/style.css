@@ -18,9 +18,15 @@
 .mg-50{
     margin: -50px 0 !important;
 }
+.mg-l-20{
+    margin-left: -20px;
+}
+.mg-r-20{
+    margin-right: -20px;
+}
 .border-card{
     box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%) !important;
-    border-radius: 6px !important;
+    z-index: 1;
 }
 .cl-b{
     color: #000c04 !important;
@@ -47,7 +53,7 @@
     text-align: center;
     margin-bottom: 48px;
 }
-.bg-t{
+.bg-g{
     background-color:#189A46;
 }
 
@@ -93,7 +99,6 @@
 .number-item{
     text-align: center;
     border-radius: 8px;
-    
 }
 .number-item h4{
     font-size: 20px;
@@ -123,9 +128,10 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:  5px;
+    padding: 0 70px;
 }
 .card-item{
-    border-radius: 6px;
+    border-radius: 8px;
     background-color: #fff;
     text-align: center;
     
@@ -133,6 +139,7 @@
 
 .card-top{
     padding: 48px 40px 8px 40px;
+    border-radius: 8px 8px 0px 0px;
 } 
 .card-top h5{
     font-size: 15px;
@@ -147,6 +154,9 @@
     background: #fff;
     border-radius:12px;
     margin-top: 30px;
+}
+.card-top h6{
+    font-size: 25px;
 }
 .card-top h4{
     font-size: 40px;
