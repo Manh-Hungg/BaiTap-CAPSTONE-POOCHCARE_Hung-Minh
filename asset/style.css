@@ -78,11 +78,18 @@
     border: none;
 }
 
-.border-btn-left button:focus{
-    background:#116E32 !important;
-    border-color: #189A46 !important ;
-    color: #fff;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,4 +206,7 @@
 }
 .card-bot button:focus{
     box-shadow: 0 0 0 0.2rem rgb(15 162 67 / 65%);
+}
+button:hover{
+    background-color: #116E32;
 }
