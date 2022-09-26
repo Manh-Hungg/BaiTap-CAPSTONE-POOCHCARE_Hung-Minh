@@ -108,23 +108,27 @@
     <!-- Video -->
     <section class="video" >
       <div class="video-content  container pt-50 ">
-        <div class="title-video">
+        <div class="title-video ">
           <h6 class="title-top" > Better pet nutrition.</h6>
           <h3 class="title-bot" > The finest fresh food and all your pet needs.</h3>
           <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit consec tetur adipisi elit. <br>
           Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo officia.</p>
         </div>
-        <div class="video-sub-content">
+        
+        <div class="video-sub-content mg-t-50">
           <img src="./asset/img/banner2.jpg" alt="video-popup">
-          <a href="#small-dialog" class="text-center" >
+          <a href="#small-dialog1" class="play-icon popup-with-zoom-anim" >
             <span class="video-play-icon">
                 <span class="fa fa-play"></span>
             </span>
           </a>
-          <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-            <iframe src="https://player.vimeo.com/video/101587706"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            </div>
+          <div id="small-dialog1" class="w3ls_small_dialog wthree_pop mfp-hide">
+            <!-- <iframe src="https://player.vimeo.com/video/101587706"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+          </div>
         </div>
+        <!-- <div id="small-dialog" class="zoom-anim-dialog dis-none">
+          <iframe src="https://player.vimeo.com/video/101587706"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div> -->
       </div>
     </section>
     <!-- End Video -->
@@ -144,43 +148,51 @@
     </script>
 
   <!-- video -->
-  <script src="./asset/js/jquery.magnific-popup.min.js"></script>
+    <script>
+    $(document).ready(function () {
+    $(".popup-with-zoom-anim").magnificPopup({
+    type: "inline",
+    fixedContentPos: false,
+    fixedBgPos: true,
+    overflowY: "auto",
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    mainClass: "my-mfp-zoom-in"
+  });
+});
+    </script>
+  <!-- <script src="./asset/js/jquery.magnific-popup.min.js"></script>
   <script>
     $(document).ready(function () {
       $('.popup-with-zoom-anim').magnificPopup({
         type: 'inline',
-
         fixedContentPos: false,
         fixedBgPos: true,
-
         overflowY: 'auto',
-
         closeBtnInside: true,
         preloader: false,
-
         midClick: true,
         removalDelay: 300,
         mainClass: 'my-mfp-zoom-in'
       });
-
       $('.popup-with-move-anim').magnificPopup({
         type: 'inline',
-
         fixedContentPos: false,
         fixedBgPos: true,
-
         overflowY: 'auto',
-
         closeBtnInside: true,
         preloader: false,
-
         midClick: true,
         removalDelay: 300,
         mainClass: 'my-mfp-slide-bottom'
       });
     });
-  </script>
+  </script> -->
 
+
+  <!--  -->
 
     <!-- JS BS 4 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
