@@ -217,6 +217,14 @@ button:hover{
     background-color: #116E32;
 }
 
+
+
+.w3l-index5 .new-block {
+  display: grid;
+  align-items: center;
+  padding: 2rem 0;
+}
+
 .title-video h6{
     font-size: 18px;
     font-weight: 400;
