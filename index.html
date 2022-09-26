@@ -116,19 +116,21 @@
         </div>
         
         <div class="video-sub-content mg-t-50">
-          <img src="./asset/img/banner2.jpg" alt="video-popup">
-          <a href="#small-dialog1" class="play-icon popup-with-zoom-anim" >
+          <div class="position-relative">
+            <img src="./asset/img/banner2.jpg" alt="video-popup">
+            <a href="#small-dialog" class="popup-with-zoom-anim text-center position-absolute" >
             <span class="video-play-icon">
                 <span class="fa fa-play"></span>
             </span>
-          </a>
-          <div id="small-dialog1" class="w3ls_small_dialog wthree_pop mfp-hide">
-            <!-- <iframe src="https://player.vimeo.com/video/101587706"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+            </a>
+            <div id="small-dialog" class="zoom-anim-dialog dis-none">
+              <iframe src="https://player.vimeo.com/video/101587706"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
-        <!-- <div id="small-dialog" class="zoom-anim-dialog dis-none">
-          <iframe src="https://player.vimeo.com/video/101587706"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        </div> -->
+         <div id="small-dialog" class="zoom-anim-dialog dis-none">
+            <iframe src="https://player.vimeo.com/video/101587706"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
     <!-- End Video -->
@@ -142,54 +144,49 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Number -->
     <script src="./asset/js/jquery.countup.js"></script>
     <script>
          $('.counter').countUp();
     </script>
 
   <!-- video -->
-    <script>
-    $(document).ready(function () {
-    $(".popup-with-zoom-anim").magnificPopup({
-    type: "inline",
-    fixedContentPos: false,
-    fixedBgPos: true,
-    overflowY: "auto",
-    closeBtnInside: true,
-    preloader: false,
-    midClick: true,
-    removalDelay: 300,
-    mainClass: "my-mfp-zoom-in"
-  });
-});
-    </script>
-  <!-- <script src="./asset/js/jquery.magnific-popup.min.js"></script>
+  <script src="./asset/js/jquery.magnific-popup.min.js"></script>
   <script>
     $(document).ready(function () {
       $('.popup-with-zoom-anim').magnificPopup({
         type: 'inline',
+  
         fixedContentPos: false,
         fixedBgPos: true,
+  
         overflowY: 'auto',
+  
         closeBtnInside: true,
         preloader: false,
+  
         midClick: true,
         removalDelay: 300,
         mainClass: 'my-mfp-zoom-in'
       });
+  
       $('.popup-with-move-anim').magnificPopup({
         type: 'inline',
+  
         fixedContentPos: false,
         fixedBgPos: true,
+  
         overflowY: 'auto',
+  
         closeBtnInside: true,
         preloader: false,
+  
         midClick: true,
         removalDelay: 300,
         mainClass: 'my-mfp-slide-bottom'
       });
     });
-  </script> -->
+  </script>
 
 
   <!--  -->
