@@ -28,10 +28,49 @@
       text-align: left;
       background-color: #fff;
     }
-
-
-
-
+    .container {
+      width: 100%;
+      max-width: 1150px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      font-family: 'Jost', sans-serif;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns:repeat( 3,1fr);
+      max-width: 1150px;
+      gap: 30px;
+   
+    }
+    .text-left {
+      text-align: left !important;
+    }
+    .text-center{
+      text-align: center !important;
+    }
+    .top-title {
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 2em;
+      letter-spacing: 1px;
+      color: #f53626;
+    }
+    .bot-title {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 48px;
+      text-transform: capitalize;
+    }
+    .img-fluid{
+      width: 100%;
+      border-radius: 10px;
+    }
+    .nospace {
+      font-size: 60px;
+    } 
 
 
 
@@ -43,73 +82,54 @@
     </style>
 </head>
 <body>
-    <section class="gallery-content">
-        <div class="gallery-container">
-            <div class="container">
-                <div class="header-section text-center mx-auto">
-                    <h6 class="top-title">View Gallery</h6>
-                    <h3 class="bot-title">Latest Gallery</h3>
-                </div>
-
-                <div class="row galler-top mt-lg-5 mt-4">
-              <div class="col-md-4 protfolio-item hover14">
-                <a href="./asset/img/g1.jpg" data-lightbox="example-set" class="mb-4"
-                  data-title="lorem ipsum dolor sit amet">
-                  <figure>
-                    <img src="./asset/img/g1.jpg" alt="product" class="img-fluid">
-                  </figure>
-                </a>
-                <a href="./asset/img/g2.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
-                  <figure>
-                    <img src="./asset/img/g2.jpg" alt="product" class="img-fluid">
-                  </figure>
-                </a>
-                <a href="./asset/img/g7.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
-                  <figure>
-                    <img src="./asset/img/g7.jpg" alt="product" class="img-fluid">
-                  </figure>
-                </a>
-              </div>
-              <div class="col-md-4 protfolio-item hover14">
-                <a href="./asset/img/g3.jpg" data-lightbox="example-set" class="mb-4"
-                  data-title="lorem ipsum dolor sit amet">
-                  <figure>
-                    <img src="./asset/img/g3.jpg" alt="product" class="img-fluid">
-                  </figure>
-                </a>
-                <a href="./asset/img/g4.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
-                  <figure>
-                    <img src="./asset/img/g4.jpg" alt="product" class="img-fluid">
-                  </figure>
-                </a>
-                <a href="./asset/img/g8.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
-                  <figure>
-                    <img src="./asset/img/g8.jpg" alt="product" class="img-fluid">
-                  </figure>
-                </a>
-              </div>
-              <div class="col-md-4 protfolio-item hover14">
-                <a href="./asset/img/g5.jpg" data-lightbox="example-set" class="mb-4"
-                  data-title="lorem ipsum dolor sit amet">
-                  <figure>
-                    <img src="./asset/img/g5.jpg" alt="product" class="img-fluid">
-                  </figure>
-                </a>
-                <a href="./asset/img/g6.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
-                  <figure>
-                    <img src="./asset/img/g6.jpg" alt="product" class="img-fluid">
-                  </figure>
-                </a>
-                <a href="./asset/img/g9.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
-                  <figure>
-                    <img src="./asset/img/g9.jpg" alt="product" class="img-fluid">
-                  </figure>
-                </a>
-              </div>
-      
+  <section class="gallery-content">
+    <div class="gallery-container">
+        <div class="container">
+            <div class="title text-center">
+                <h6 class="top-title">View Gallery</h6>
+                <h3 class="bot-title">Latest Gallery</h3>
             </div>
-          </div>
+
+            <div class="container-img grid nospace">
+              <div class="col-img">
+                <a href="./asset/img/g1.jpg" data-lightbox="example-set" class=""
+                  data-title="lorem ipsum dolor sit amet">
+                    <img src="./asset/img/g1.jpg" alt="product" class="img-fluid">
+                </a>
+                <a href="./asset/img/g2.jpg" data-lightbox="example-set" class="" data-title="lorem ipsum dolor sit amet">
+                    <img src="./asset/img/g2.jpg" alt="product" class="img-fluid">
+                </a>
+                <a href="./asset/img/g7.jpg" data-lightbox="example-set" class="" data-title="lorem ipsum dolor sit amet">
+                    <img src="./asset/img/g7.jpg" alt="product" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-img">
+                <a href="./asset/img/g3.jpg" data-lightbox="example-set" class=""
+                  data-title="lorem ipsum dolor sit amet">
+                    <img src="./asset/img/g3.jpg" alt="product" class="img-fluid">
+                </a>
+                <a href="./asset/img/g4.jpg" data-lightbox="example-set" class="" data-title="lorem ipsum dolor sit amet">
+                    <img src="./asset/img/g4.jpg" alt="product" class="img-fluid">
+                </a>
+                <a href="./asset/img/g8.jpg" data-lightbox="example-set" class="" data-title="lorem ipsum dolor sit amet">
+                    <img src="./asset/img/g8.jpg" alt="product" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-img">
+                <a href="./asset/img/g5.jpg" data-lightbox="example-set" class=""
+                  data-title="lorem ipsum dolor sit amet">
+                    <img src="./asset/img/g5.jpg" alt="product" class="img-fluid">
+                </a>
+                <a href="./asset/img/g6.jpg" data-lightbox="example-set" class="" data-title="lorem ipsum dolor sit amet">
+                    <img src="./asset/img/g6.jpg" alt="product" class="img-fluid">
+                </a>
+                <a href="./asset/img/g9.jpg" data-lightbox="example-set" class="" data-title="lorem ipsum dolor sit amet">
+                    <img src="./asset/img/g9.jpg" alt="product" class="img-fluid">
+                </a>
+              </div>
+            </div>
         </div>
-    </section>
+    </div>
+  </section>
 </body>
 </html>
