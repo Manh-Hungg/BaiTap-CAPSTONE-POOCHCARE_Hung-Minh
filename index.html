@@ -119,18 +119,19 @@
           </div>
           <div class="video-sub-content mg-t-50">
           <div class="position-relative">
-            <img src="./asset/img/banner2.jpg" alt="video-popup">
-            <a href="#small-dialog" class="popup-with-zoom-anim text-center position-absolute" >
-            <span class="video-play-icon">
-                <span class="fa fa-play"></span>
-            </span>
+
+            <img class="open-popup-link" src="./asset/img/banner2.jpg" alt="">
+            <a href="#small-dialog" class="open-popup-link text-center mfp-hide position-absolute" >
+            <span class="video-play-icon"><span class="fa fa-play"></span></span>
             </a>
-            <div id="small-dialog" class="zoom-anim-dialog dis-none">
+
+            <div id="small-dialog" class="open-popup-link dis-none mfp-hide">
               <iframe src="https://player.vimeo.com/video/101587706"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
           </div>
+
           </div>
-          <div id="small-dialog" class="zoom-anim-dialog dis-none">
+          <div id="small-dialog" class="open-popup-link dis-none mfp-hide">
             <iframe src="https://player.vimeo.com/video/101587706"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
           </div>
         </div>  
@@ -145,7 +146,9 @@
 
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Number -->
     <script src="./asset/js/jquery.countup.js"></script>
@@ -154,48 +157,14 @@
     </script>
 
   <!-- video -->
-  <script src="./asset/js/jquery.magnific-popup.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-  <script>
-    $(document).ready(function () {
-      $('.popup-with-zoom-anim').magnificPopup({
-        type: 'inline',
-  
-        fixedContentPos: false,
-        fixedBgPos: true,
-  
-        overflowY: 'auto',
-  
-        closeBtnInside: true,
-        preloader: false,
-  
-        midClick: true,
-        removalDelay: 300,
-        mainClass: 'my-mfp-zoom-in'
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $('.open-popup-link').magnificPopup({
+        type:'inline',
+        midClick: true
       });
-  
-      $('.popup-with-move-anim').magnificPopup({
-        type: 'inline',
-  
-        fixedContentPos: false,
-        fixedBgPos: true,
-  
-        overflowY: 'auto',
-  
-        closeBtnInside: true,
-        preloader: false,
-  
-        midClick: true,
-        removalDelay: 300,
-        mainClass: 'my-mfp-slide-bottom'
-      });
-    });
-  </script>
-  
+    </script>
 
-  <!--  -->
 
     <!-- JS BS 4 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
