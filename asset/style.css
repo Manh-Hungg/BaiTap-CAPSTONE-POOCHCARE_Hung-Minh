@@ -8,6 +8,7 @@
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 .pb-50{
     padding-bottom: 50px !important;
@@ -277,8 +278,69 @@ button:hover{
     transition: 0.3s ease-in-out;
 }
 
+@media (min-width: 1280px){
+    .container {
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width: 991px){
+    .container{
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .video-content {
+        padding: 0 30px;
+    }
+    .btn-card {
+        display: none;
+    }
+}
 
-
+@media (max-width: 800px){
+    .card-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin: 50px auto 0;
+        width: 70%
+    }
+    .card-item{
+        margin-right: 10px;
+        margin-left:  10px;
+        margin: 50px 0;
+        border: 1px solid #f0f3f0;
+    }
+}
+@media (max-width: 700px){
+    .container{
+        max-width: 720px;
+    }
+    .video-content {
+        padding: 0 20px;
+    }
+    .card-content {
+        width: 80%
+    }
+}
+@media (max-width: 600px){
+    .card-content {
+        width: 85%
+    }
+}
+@media (max-width: 550px){
+    .container {
+        max-width: 540px;
+    }
+    .video-content {
+        padding: 0 10px;
+    }
+    .card-content {
+        width: 100%
+    }
+}
 
 
 
