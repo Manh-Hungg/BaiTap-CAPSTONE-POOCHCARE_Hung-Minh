@@ -144,16 +144,31 @@
 
 
     header {
-        position: fixed;
-        top: 40px;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        width: 100%;
+      height: 90px;
+      transition: all 0.4s ease 0s;
+      box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+      display: grid;
+      align-items: center;
+      padding: 0px;
+    }
+    header.nav-fixed{
+      height: 80px;
+      background-color: #fff;
+    }
+
+    .fixed-top {
+      position: fixed;
+      top: 40px;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+      align-items: center;
     }
     .header__content {
         margin: auto;
-        
+    }
+    .bg-c-w{
+      background-color: #fff!important;
     
     }
     .header__pooch .navbar-brand {
@@ -194,6 +209,9 @@
         padding: 0 15px;
         font-size: 18px;
     }
+    .navbar{
+      padding: 0 110px;
+    }
     .header__pooch .navbar-brand {
         padding-left: 70px;
     }
@@ -201,12 +219,61 @@
         
         padding: 5px 70px 0 0;
     }
+
+
+
+    .page-intro{
+      margin-top: 90px;
+      background: url(./asset/img/banner4.jpg) no-repeat center;
+      background-size: cover;
+      position: relative;
+      align-items: center;
+      padding: 1em 0;
+      z-index: 0;
+      text-align: center;
+    }
+    .page-intro::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      min-height: 100%;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #0c0c0c;
+      opacity: .6;
+    }
+    .page-intro h2.title{
+      font-size: 50px;
+      font-weight: 600;
+      color: #fff;
+    } 
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    .page-intro .title-sub li{
+      font-size: 1.2em;
+      line-height: 1.5;
+      font-weight: 400;
+      color: #fff;
+    }
+    .page-intro .title-sub li span.fa{
+      font-size: 12px;
+      vertical-align: 1px;
+    }
+
+    .color-green{
+      color: #189A46;
+      cursor: pointer
+    }
+    
     </style>
 
 </head>
 <body>
-  <header class="header__pooch">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header class="header__pooch fixed-top nav-fixed">
+    <nav class="navbar navbar-expand-lg navbar-light bg-c-w">
       <h2 class="navbar-brand">Pooch Care
       </h2>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#poochNavbar"
@@ -256,6 +323,16 @@
       </div>
     </nav>
   </header>
+  <section class="page-intro">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+        <div class="container ">
+            <h2 class="title">Services</h2>
+            <ul class="title-sub">
+                <li class="active"> <span class="color-green"> Home </span><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Services </li>
+            </ul>
+        </div>
+    </div>
+  </section>
 
 
     <section class="services">
@@ -319,7 +396,7 @@
                 <a href="services.html" class="btn-read">Read more</a>
               </div>
               <div class="services-img">
-                <a href="#"><img src="./asset/img/g4 (1).jpg" class="img-fluid" alt=""></a>
+                <a href="#"><img src="./asset/img/g4.jpg" class="img-fluid" alt=""></a>
               </div>
             </div>
             <!-- Row-->
