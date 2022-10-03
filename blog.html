@@ -31,7 +31,8 @@
     }    
     body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-family: 'Jost', sans-serif;
+        /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
@@ -89,6 +90,9 @@
         line-height: 28px;
         color:#696969;
         font-family: 'Jost', sans-serif;
+    }
+    .pd-t-50{
+        padding-top:50px;
     }
     .blog{
         background-color: rgba(147, 107, 232, 0.05);
@@ -180,18 +184,205 @@
         text-decoration: none;
     }
 
+    header {
+      height: 90px;
+      transition: all 0.4s ease 0s;
+      box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+      display: grid;
+      align-items: center;
+      padding: 0px;
+    }
+    header.nav-fixed{
+      height: 80px;
+      background-color: #fff;
+    }
+
+    .fixed-top {
+      position: fixed;
+      top: 40px;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+      align-items: center;
+    }
+    .header__content {
+        margin: auto;
+    }
+    .bg-c-w{
+      background-color: #fff!important;
+    
+    }
+    .header__pooch .navbar-brand {
+        font-size: 34px;
+        color:#189a46;
+        font-weight: 700;
+    }
+    #poochNavbar .nav-link i {
+        font-size: 12px;
+    }
+    
+    /* trước hover  */
+    #poochNavbar .nav-link::after {
+        content: '';
+        width: 0;
+        height: 1.5px;
+        background: #189a46;
+        display: block;
+        transition: all 0.5s;
+    }
+    #poochNavbar .nav-link {
+        color: #000;
+    }
+    
+    /* sau hover  */
+    #poochNavbar  .nav-link:hover::after {
+        width: 100%;
+    }
+    #poochNavbar  .nav-link:hover {
+        color: #189a46;
+    }
+    
+    #poochNavbar .active .nav-link {
+       color: #189a46;
+    }
+    
+    #poochNavbar a {
+        padding: 0 15px;
+        font-size: 18px;
+    }
+    .navbar{
+      padding: 0 110px;
+    }
+    .header__pooch .navbar-brand {
+        padding-left: 70px;
+    }
+    .header__pooch .navbar-nav {
+        
+        padding: 5px 70px 0 0;
+    }
+
+
+
+    .page-intro{
+      margin-top: 90px;
+      background: url(./asset/img/banner4.jpg) no-repeat center;
+      background-size: cover;
+      position: relative;
+      align-items: center;
+      padding: 1em 0;
+      z-index: 0;
+      text-align: center;
+    }
+    .page-intro::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      min-height: 100%;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #0c0c0c;
+      opacity: .6;
+    }
+    .page-intro h2.title{
+      font-size: 50px;
+      font-weight: 600;
+      color: #fff;
+    } 
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    .page-intro .title-sub li{
+      font-size: 1.2em;
+      line-height: 1.5;
+      font-weight: 400;
+      color: #fff;
+    }
+    .page-intro .title-sub li span.fa{
+      font-size: 12px;
+      vertical-align: 1px;
+    }
+
+    .color-green{
+      color: #189A46;
+      cursor: pointer
+    }
+
 
     </style>
 </head>
 <body>
+    <header class="header__pooch fixed-top nav-fixed">
+        <nav class="navbar navbar-expand-lg navbar-light bg-c-w">
+          <h2 class="navbar-brand">Pooch Care
+          </h2>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#poochNavbar"
+            aria-controls="poochNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="poochNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">
+                  <span>Blog</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+               
+    
+                <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Blog posts</a>
+                  <a class="dropdown-item" href="#">Blog Single</a>
+                  <a class="dropdown-item" href="#">Landing page</a>
+                </div> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <!-- icon  -->
+              </li>
+    
+            </ul>
+    
+          </div>
+        </nav>
+      </header>
+      <section class="page-intro">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+            <div class="container ">
+                <h2 class="title">Blog</h2>
+                <ul class="title-sub">
+                    <li class="active"> <span class="color-green"> Home </span><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Blog </li>
+                </ul>
+            </div>
+        </div>
+      </section>
+
     <section class="blog">
         <div class="container ">
-            <div class="blog-title text-center ">
+            <div class="blog-title text-center pd-t-50 ">
                 <span class="top-title text-center">Blog posts</span>
-                <h3 class="bot-title ">
+                <h3 class="bot-title  ">
                   Highest Quality Care For Pets You'll Love</h3>
             </div>
-            <div class="row">
+            <div class="row pd-t-50">
                 <div class="col-lg-4 col-md-6 item mt-md-0 mt-5">
                     <div class="card">
                         <div class="card-header p-0 position-relative">
@@ -200,7 +391,7 @@
                             </a>
                             
                         </div>
-                        <div class="card-body card-shadow">
+                        <div class="card-body card-shadow ">
                             <a href="#" class="blog-post">Delivering happiness for Pets</a>
                             <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
                                 vitae sit.</p>
