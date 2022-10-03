@@ -241,6 +241,19 @@
       padding-top: 50px;
     }
 
+    @media  (max-width :1200px ) {
+      .container-img{
+        padding: 0 80px;
+      }
+    }
+    @media  (max-width :740px ) {
+      .container-img{
+        display: grid;;
+        grid-template-columns: 1fr;
+        padding: 0 80px;
+      }
+    }
+
 
     </style>
 </head>
@@ -314,7 +327,7 @@
                 <h3 class="bot-title">Latest Gallery</h3>
             </div>
 
-            <div class="container-img grid pd-t-50">
+            <div class="row container-img grid ">
               <div class="col-img ">
                 <a href="./asset/img/g1.jpg" data-lightbox="example-set" class=""
                   data-title="lorem ipsum dolor sit amet">
