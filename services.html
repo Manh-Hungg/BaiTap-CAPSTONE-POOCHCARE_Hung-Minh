@@ -46,7 +46,7 @@
     }
     .container {
       width: 100%;
-      max-width: 1150px;
+      justify-content: center;
       padding-right: 15px;
       padding-left: 15px;
       margin-right: auto;
@@ -88,7 +88,7 @@
       padding-right: 50px;
     }
 
-    .services .content-photo{
+    .content-photo{
       border-bottom: 1px solid #f0f3f0;
       margin-top: 80px;
       padding-bottom: 80px;
@@ -268,13 +268,60 @@
       cursor: pointer
     }
     
+    
+    @media  (max-width :1000px ){
+      .content-photo{
+        margin-top: 40px;
+      }
+      .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .row {
+        flex-direction: column;
+      }
+      .services-img{
+        order: 1;
+        width: 100%;
+        text-align: center;
+      }
+      .services-title{
+        order:2;
+        width: 100%;
 
-    @media  (max-width :980px ){
-        .content-photo{
-          margin-top: 40px;
-          padding-bottom: 40px;
-          align-items: center;
-        }
+      }
+    }
+    @media  (max-width :700px ){
+      .content-photo{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        align-items: center;
+      }
+      .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .content-photo {
+        margin-top: 40px;
+        padding: 0;
+      }   
+      .row {
+        flex-direction: column;
+      }
+      .services-img{
+        order: 1; 
+        width: 100%;
+      }
+      .services-title{
+        order:2;
+        width: 100%;}
+      .pd-l, .pd-r{
+        padding-top:10px;
+        padding-left: 12px;
+      }
+
     }
     </style>
 
@@ -341,17 +388,15 @@
         </div>
     </div>
   </section>
-
-
     <section class="services">
         <div class="content-photo-info ">
           <div class="container ">
             <!-- Row-->
             <div class="content-photo row">
-              <div class="services-img">
+              <div class="services-img ">
                 <a href="#"><img src="./asset/img/g1.jpg" class="img-fluid" alt=""></a>
               </div>
-              <div class="services-title text-left pd-l">
+              <div class="services-title text-left pd-l ">
                 <h6 class="sub-title">01</h6>
                 <h3 class="dog-title">Dog Walking</h3>
                 <p class=" ">Lorem ipsum dolor sit amet,Ea consequuntur illum
@@ -372,17 +417,17 @@
                   consequatur saepe blanditiis.</p>
                 <a href="services.html" class="btn-read">Read more</a>
               </div>
-              <div class="services-img">
+              <div class="services-img ">
                 <a href="#"><img src="./asset/img/g2.jpg" class="img-fluid" alt=""></a>
               </div>
             </div>
             <!-- Row-->
             <!-- Row-->
-            <div class="content-photo row">
+            <div class="content-photo row ">
               <div class="services-img">
                 <a href="#"><img src="./asset/img/g3.jpg" class="img-fluid" alt=""></a>
               </div>
-              <div class="services-title text-left pd-l">
+              <div class="services-title text-left pd-l ">
                 <h6 class="sub-title">03</h6>
                 <h3 class="dog-title">Dog Boarding</h3>
                 <p class=" ">Lorem ipsum dolor sit amet,Ea consequuntur illum
@@ -395,7 +440,7 @@
             <!-- Row-->
             <div class="content-photo row">
       
-              <div class="services-title text-left pd-r">
+              <div class="services-title text-left pd-r ">
                 <h6 class="sub-title">04</h6>
                 <h3 class="dog-title">Dog Transportation</h3>
                 <p class=" ">Lorem ipsum dolor sit amet,Ea consequuntur illum
@@ -403,7 +448,7 @@
                   consequatur saepe blanditiis.</p>
                 <a href="services.html" class="btn-read">Read more</a>
               </div>
-              <div class="services-img">
+              <div class="services-img ">
                 <a href="#"><img src="./asset/img/g4.jpg" class="img-fluid" alt=""></a>
               </div>
             </div>
