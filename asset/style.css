@@ -1,303 +1,360 @@
 /* GLOBAL  */
-/* :root{
-    --primary-color: #189a46;
-    --white-color: #fff;
-    --black-color: #000c04;
-    --text-color: #696969; */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    html, body {
-        font-family: 'Jost', sans-serif;
-        margin: 0;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #212529;
-        text-align: left;
-        background-color: #fff;
-    }
-    
-    .section__inner {
-        padding-top: 100px;
-    }
-    a.read {
-        text-decoration: none;
-        font-size: 17px; 
-        padding: 0;
-        border-bottom: 2px solid #189a46;
-        color: #000c04;
-        transition: 0.3s ease-in-out;
-        font-weight: 600;
-        margin-top: 20px;
-        display: inline-block; 
-       
-    }
-    a.read:hover {
-        color: #189a46;
-    }
-    
-    /* HEADER  */
-    
-    header {
-        position: fixed;
-        top: 40px;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        width: 100%;
-    }
-    .header__content {
-        margin: auto;
-        
-    
-    }
-    .header__pooch .navbar-brand {
-        font-size: 34px;
-        color:#189a46;
-        font-weight: 700;
-    }
-    #poochNavbar .nav-link i {
-        font-size: 12px;
-    }
-    
-    /* trước hover  */
-    #poochNavbar .nav-link::after {
-        content: '';
-        width: 0;
-        height: 1.5px;
-        background: #189a46;
-        display: block;
-        transition: all 0.5s;
-    }
-    #poochNavbar .nav-link {
-        color: #000;
-    }
-    
-    /* sau hover  */
-    #poochNavbar  .nav-link:hover::after {
-        width: 100%;
-    }
-    #poochNavbar  .nav-link:hover {
-        color: #189a46;
-    }
-    
-    #poochNavbar .active .nav-link {
-       color: #189a46;
-    }
-    
-    #poochNavbar a {
-        padding: 0 15px;
-        font-size: 18px;
-    }
-    .header__pooch .navbar-brand {
-        padding-left: 70px;
-    }
-    .header__pooch .navbar-nav {
-        
-        padding: 5px 70px 0 0;
-    }
-    
-    /* CAROUSEL  */
-    .poochCarousel {
-        position: relative;
-        height: auto;
-    }
-    
-    .poochCarousel .poochCarousel__caption1, 
-    .poochCarousel .poochCarousel__caption3 {
-        position: absolute;
-        left: 6%;
-        top: 18%;
-        width: 50%;
-    }
-    
-    .poochCarousel .poochCarousel__caption2, 
-    .poochCarousel .poochCarousel__caption4 {
-        position: absolute;
-        left: 40%;
-        top: 18%;
-        width: 50%;
-    }
-    
-    .poochCarousel h1 {
-        font-size: 66px;
-        line-height: 76px;
-        font-weight: 700;
-        color: #fff;
-        text-transform: capitalize;
-    }
-    .poochCarousel p {
-        font-size: 18px;
-        line-height: 40px;
-    }
-    .poochCarousel .carousel-item {
-        width: 100vw;
-    }
-    .poochCarousel .carousel-item>img {
-        height: 100%; 
-        object-fit: cover;
-        filter: brightness(50%);
-    }
-    
-    .poochCarousel .carousel-indicators li {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #fff;
-        opacity: 2;
-        margin:0 10px;
-    }
-    .poochCarousel .carousel-indicators li.active {
-        background-color: #35a22c;
-        width: 30px;
-        height: 10px;
-        border-radius: 2px;
-    }
-    
-    .poochCarousel .btn1 {
-     color: #189a46;
-     padding: 13px 33px;
-     font-size: 18px;
-     font-weight: 400;
-     border-radius: 10px;
-     background-color: #fff;
-     margin-right: 7px;
-    }
-    .poochCarousel .btn2 {
-    padding: 13px 33px;
-    font-size: 18px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    font-size: 1rem;
     font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section__inner {
+    padding-top: 100px;
+}
+a.read {
+    text-decoration: none;
+    font-size: 17px; 
+    padding: 0;
+    border-bottom: 2px solid #189a46;
+    color: #000c04;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block; 
+   
+}
+a.read:hover {
+    color: #189a46;
+}
+
+.title .sub-title {
+    font-size: 19px;
+    color: #f53626;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.title h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+.mt-3
+.my-3 {
+    margin-top: 1rem !important
+}
+.mb-3 {
+    margin-bottom: 1rem !important
+}
+.mg-t-50 {
+    margin-top: 50px !important;
+}
+.pb-50{
+    padding-bottom: 50px !important;
+}
+.pt-50{
+    padding-top: 50px !important;
+}
+.mt-4, .my-4 {
+    margin-top: 1.5rem !important; 
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+    font-family: 'Jost', sans-serif;
+  } 
+body img {
     border-radius: 10px;
-    border: 2px solid #fff;
+} 
+img {
+    vertical-align: middle;
+    border-style: none;
+} 
+ a {
+    text-decoration: none;
+background-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: #000c04;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+}
+/* HEADER  */
+
+header {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header__content {
+    margin: auto;
+    
+
+}
+.header__pooch .navbar-brand a {
+    font-size: 34px;
+    color:#189a46;
+    font-weight: 700;
+    text-decoration: none;
+}
+.header__pooch .navbar-brand a:hover {
+    color:#189a46;
+    
+}
+
+#poochNavbar .nav-link i {
+    font-size: 12px;
+}
+
+/* trước hover  */
+#poochNavbar .nav-link::after {
+    content: '';
+    width: 0;
+    height: 1.5px;
+    background: #189a46;
+    display: block;
     transition: all 0.5s;
-    }
+}
+#poochNavbar .nav-link {
+    color: #000;
+}
+
+/* sau hover  */
+#poochNavbar  .nav-link:hover::after {
+    width: 100%;
+}
+#poochNavbar  .nav-link:hover {
+    color: #189a46;
+}
+
+#poochNavbar .active .nav-link {
+   color: #189a46;
+}
+
+#poochNavbar a {
+    padding: 0 15px;
+    font-size: 18px;
+}
+.header__pooch .navbar-brand {
+    padding-left: 70px;
+}
+.header__pooch .navbar-nav {
     
-    .poochCarousel .btn2:hover {
-        background-color: #fff;
-        color: #189a46;
-    }
+    padding: 5px 70px 0 0;
+}
+
+/* CAROUSEL  */
+.poochCarousel {
+    position: relative;
+    height: auto;
+}
+
+.poochCarousel .poochCarousel__caption1, 
+.poochCarousel .poochCarousel__caption3 {
+    position: absolute;
+    left: 6%;
+    top: 18%;
+    width: 50%;
+}
+
+.poochCarousel .poochCarousel__caption2, 
+.poochCarousel .poochCarousel__caption4 {
+    position: absolute;
+    left: 40%;
+    top: 18%;
+    width: 50%;
+}
+
+.poochCarousel h1 {
+    font-size: 66px;
+    line-height: 76px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+.poochCarousel p {
+    font-size: 18px;
+    line-height: 40px;
+    padding-bottom: 40px;
+    color: #fff;
+}
     
-    /* ABOUT US  */
-    .aboutUs {
-        padding-bottom: 100px;
-    }
-    .title {
-        /* display: block;
-        text-align: center; */
-    }
-    .title .sub-title {
-        font-size: 19px;
-        color: #f53626;
-        font-weight: 400;
-        letter-spacing: 1px;
-    }
-    .title h3 {
-        font-size: 40px;
-        font-weight: 600;
-        line-height: 48px;
-    }
-    .container {
-        max-width: 1140px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .aboutUs__content {
-        max-width: 700px;
-        text-align: center;
-        margin: 0 auto;
-    }
-    
-    .aboutUs p {
-        margin: 0;
-        padding: 0;
-        font-size: 1.2em;
-        line-height: 28px;
-        color: #696969;
-        margin: 16px 0;
-    }
-    
-    /* FEATURE  */
-    .feature {
-        background-color:#f9f7fe;
-        padding-bottom: 70px;
-    }
-    
-    .feature__icon {
-    
-        color: #189a46;
-    }
-    .feature__icon i {
-        font-size: 30px;
-    }
-    .feature .card-title {
-        text-decoration:none;
-        font-size: 24px;
-        font-weight: 600;
-        margin-top: 25px;
-        margin-bottom: 15px;
-        display: block;
-        color: #000c04;
-    }
-    .feature .card-title:hover {
-        color: #189a46;
-        text-decoration: none;
-    }
-    .feature p {
-        font-size: 19px;
-        color: #212529;
-        line-height: 28px;
-    }
-    .feature .box {
-        padding: 40px 30px;
-        transition: all 0.5s ease 0s;
-        border-radius: 10px;
-        background-color: #fff;
-        position: relative;
-        margin-bottom: 30px;
-    }
-    .feature .box:hover {
-        background-color: rgba(147, 107, 232, 0.05);
-    }
-    
-    /* SERVICE  */
-    .whyChooseUs .col__left img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-    .whyChooseUs .col__right {
-        align-self: center;
-       
-    }
-    .whyChooseUs p {
-        font-size: 16px;
-        color: #696969;
-        line-height: 24.5px;
-        padding: 17px 0;
-    }
-    .whyChooseUs ul {
-        list-style: none;
-    }
-    .whyChooseUs li {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 26px;
-        color: #000c04;
-        margin: 15px 0;
-        font-weight: 600;
-    }
-    .whyChooseUs i {
-        font-size: 10px;
-        background-color: #f9f7fe;
-        color: #189a46;
-        border-radius: 50%;
-        padding: 8px;
-        margin-right: 12px;
-        display: inline-block;
-    }
-       
+
+
+.poochCarousel .carousel-item {
+    width: 100vw;
+}
+.poochCarousel .carousel-item>img {
+    height: 100%; 
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.poochCarousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 2;
+    margin:0 10px;
+}
+.poochCarousel .carousel-indicators li.active {
+    background-color: #35a22c;
+    width: 30px;
+    height: 10px;
+    border-radius: 2px;
+}
+
+.poochCarousel .btn1 {
+ color: #189a46;
+ padding: 13px 33px;
+ font-size: 18px;
+ font-weight: 400;
+ border-radius: 10px;
+ background-color: #fff;
+ margin-right: 7px;
+}
+.poochCarousel .btn2 {
+padding: 13px 33px;
+font-size: 18px;
+font-weight: 400;
+border-radius: 10px;
+border: 2px solid #fff;
+transition: all 0.5s;
+}
+
+.poochCarousel .btn2:hover {
+    background-color: #fff;
+    color: #189a46;
+}
+
+/* ABOUT US  */
+.aboutUs {
+    padding-bottom: 100px;
+}
+
+.container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.aboutUs__content {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.aboutUs p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+    margin: 16px 0;
+}
+
+/* FEATURE  */
+.feature {
+    background-color:#f9f7fe;
+    padding-bottom: 70px;
+}
+
+.feature__icon {
+
+    color: #189a46;
+}
+.feature__icon i {
+    font-size: 30px;
+}
+.feature .card-title {
+    text-decoration:none;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: block;
+    color: #000c04;
+}
+.feature .card-title:hover {
+    color: #189a46;
+    text-decoration: none;
+}
+.feature p {
+    font-size: 19px;
+    color: #212529;
+    line-height: 28px;
+}
+.feature .box {
+    padding: 40px 30px;
+    transition: all 0.5s ease 0s;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+}
+.feature .box:hover {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+/* SERVICE  */
+.whyChooseUs .col__left img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+.whyChooseUs .col__right {
+align-self: center;
+
+}
+.whyChooseUs p {
+font-size: 16px;
+color: #696969;
+line-height: 24.5px;
+padding: 17px 0;
+}
+.whyChooseUs ul {
+list-style: none;
+}
+.whyChooseUs li {
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #000c04;
+margin: 15px 0;
+font-weight: 600;
+}
+.whyChooseUs i {
+font-size: 10px;
+background-color: #f9f7fe;
+color: #189a46;
+border-radius: 50%;
+padding: 8px;
+margin-right: 12px;
+display: inline-block;
+}
