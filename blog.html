@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
     
 
     <!-- Google fonts -->  
@@ -208,10 +208,7 @@
     .header__content {
         margin: auto;
     }
-    .bg-c-w{
-      background-color: #fff!important;
-    
-    }
+
     .header__pooch .navbar-brand {
         font-size: 34px;
         color:#189a46;
@@ -320,11 +317,97 @@
       }
     }
 
+    #myBody{
+        background-color:white;
+    }
+    #switchButton {
+        background-color: #fff;
+        font-size: 22px;
+        color: #696969;
+        padding: 0;
+    }
+    #switchButton .fa-sun {
+        display: none;
+        
+    }
+    #switchButton .fa-moon {
+        display: block;
+    }
+    /* Dark Theme*/
+    .dark#myBody{
+        background-color:#151414;
+    }
+    .dark #switchButton {
+        background-color: #151414;
+    }
+    .dark #switchButton .fa-sun {
+        display: block;
+        color: #afafaf;
+        font-size: 22px;
+    }
+    .dark #poochNavbar .nav-link{
+        color: #ddd;
+    }
+    .dark .header__pooch{
+        background-color: #151515 ;
+    }
+    .dark h3{
+        color: #ddd;
+    }
+    .dark #switchButton .fa-moon {
+        display: none;
+    }
+    .dark .card {
+        background-color: black;
+        color: white;
+    }
+    .dark .card-shadow{
+        background: #151515;
+        padding: 30px 20px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+    }
+    .dark a.blog-post{
+        color: #ddd;
+        display: block;
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        transition: .3s ease;
+        -webkit-transition: .3s ease;
+        -ms-transition: .3s ease;
+        -o-transition: .3s ease;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+    .dark a.blog-post:hover{
+        color: #189A46;
+        transition: .3s ease;
+        -webkit-transition: .3s ease;
+        -ms-transition: .3s ease;
+        -o-transition: .3s ease;
+    }
+    .dark .author a {
+        color: #ddd;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .dark .author a:hover {
+        color: #f53626;
+    }
+    .dark a{
+        color: #ddd;
+    }
+
     </style>
 </head>
-<body>
+<body id="myBody">
+    
     <header class="header__pooch fixed-top nav-fixed">
-        <nav class="navbar navbar-expand-lg navbar-light bg-c-w">
+        <nav class="navbar navbar-expand-lg navbar-light ">
           <h2 class="navbar-brand">Pooch Care
           </h2>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#poochNavbar"
@@ -351,9 +434,7 @@
                   <span>Blog</span>
                   <i class="fa-solid fa-chevron-down"></i>
                 </a>
-               
-    
-                <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                   Blog
                 </a>
                 <div class="dropdown-menu">
@@ -366,7 +447,13 @@
                 <a class="nav-link">Contact</a>
               </li>
               <li class="nav-item">
-                <!-- icon  -->
+                <div class="container">
+                    <div >
+                      <button class="btn" id="switchButton"  title="Click to switch theme">
+                        <i class="fa-regular fa-moon"></i>
+                        <i class="fa-regular fa-sun"></i>
+                      </button>
+                </div>
               </li>
     
             </ul>
@@ -374,6 +461,8 @@
           </div>
         </nav>
       </header>
+
+    
       <section class="page-intro">
         <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
             <div class="container ">
@@ -652,7 +741,11 @@
 
 
 
-
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("myBody").classList.toggle("dark");
+        };
+    </script>
 
     <!-- JS BS 4 -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

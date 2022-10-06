@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Services</title>
 
      <!-- Google fonts -->  
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
@@ -321,14 +321,88 @@
         padding-top:10px;
         padding-left: 12px;
       }
-
     }
+
+    #myBody{
+        background-color:white;
+    }
+    #switchButton {
+        background-color: #fff;
+        font-size: 22px;
+        color: #696969;
+        padding: 0;
+    }
+    #switchButton .fa-sun {
+        display: none;
+        
+    }
+    #switchButton .fa-moon {
+        display: block;
+    }
+    /* Dark Theme*/
+    .dark#myBody{
+        background-color:#151414;
+    }
+    .dark #switchButton {
+        background-color: #151414;
+    }
+    .dark #switchButton .fa-sun {
+        display: block;
+        color: #afafaf;
+        font-size: 22px;
+    }
+    .dark #switchButton .fa-moon {
+        display: none;
+    }
+    .dark #poochNavbar .nav-link{
+        color: #ddd;
+    }
+    .dark .header__pooch{
+        background-color: #151515 ;
+    }
+    .dark h3{
+        color: #ddd;
+    }
+    .dark .card {
+        background-color: black;
+        color: white;
+    }
+    .dark .content-photo {
+        border-bottom: 1px solid #444;
+        margin-top: 80px;
+        padding-bottom: 80px;
+        align-items: center;
+      }
+    .dark p {
+        font-size: 1.2em;
+        line-height: 28px;
+        color: #afafaf;
+        font-family: 'Jost', sans-serif;
+        padding: 16px 0;
+      }      
+    .dark a.btn-read {
+        font-size: 17px;
+        padding: 0;
+        border-bottom: 2px solid #189A46;
+        color: #ddd;
+        transition: 0.3s ease-in-out;
+        font-weight: 600;
+        border-radius: 0;
+        margin-top: 20px;
+        display: inline-block;
+        text-transform: capitalize;
+        font-family: 'Jost', sans-serif;
+    }
+    .dark a.btn-read:hover {
+        color: #189A46;
+    }
+
     </style>
 
 </head>
-<body>
+<body id="myBody">
   <header class="header__pooch fixed-top nav-fixed">
-    <nav class="navbar navbar-expand-lg navbar-light bg-c-w">
+    <nav class="navbar navbar-expand-lg navbar-light ">
       <h2 class="navbar-brand">Pooch Care
       </h2>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#poochNavbar"
@@ -370,7 +444,13 @@
             <a class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <!-- icon  -->
+            <div class="container">
+                <div >
+                  <button class="btn" id="switchButton"  title="Click to switch theme">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>
+                  </button>
+            </div>
           </li>
 
         </ul>
@@ -457,6 +537,12 @@
           </div>
         </div>
       </section>
+    
+  <script>
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+    };
+  </script>
 
   <!-- JS BS 4 -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
