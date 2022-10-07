@@ -52,6 +52,7 @@
 
     <!-- MY CSS  -->
     <link rel="stylesheet" href="./asset/style.css" />
+    <link rel="stylesheet" href="./asset/respon.css">
 
     <style>
       /* PAGE INTRO */
@@ -113,6 +114,9 @@
         grid-template-columns: 2fr 1fr;
         grid-gap: 40px;
       }
+      .d-grid {
+    display: grid;
+}
       .twice-two {
         display: grid;
         grid-gap: 20px;
@@ -162,7 +166,7 @@
       .contact-grid .btn-style {
         float: right;
       }
-      .btn-style {
+      .findUs .btn-style {
         padding: 12px 35px;
         font-size: 18px;
         line-height: 28px;
@@ -171,12 +175,12 @@
         transition: 0.3s ease-in;
         border-radius: 10px;
       }
-      .btn-primary {
+      .findUs .btn-primary {
         color: #fff;
         background-color: #189a46;
         border-color: #189a46;
       }
-      .btn-primary:hover {
+      .findUs .btn-primary:hover {
         color: #fff;
         background-color: #116e32;
         border-color: #116e32;
@@ -366,14 +370,14 @@
         </div>
       </div>
     </section>
-    <section class="findUs pt-50">
+    <section class="findUs pt-5">
       <div class="findUs__content pt-lg-4">
         <div class="title">
           <h6 class="sub-title text-center mb-2">FIND US</h6>
           <h3 class="text-center mb-5">Get In Touch With Us</h3>
         </div>
         <div class="container pb-lg-4">
-          <div class="contact-grid">
+          <div class="contact-grid d-grid ">
             <div class="map-content-9 mt-lg-0 mt-md-4 mt-2">
               <form
                 action="https://sendmail.w3layouts.com/submitForm"
