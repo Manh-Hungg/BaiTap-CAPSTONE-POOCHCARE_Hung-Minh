@@ -289,10 +289,32 @@
       .services-title{
         order:2;
         width: 100%;
-
+      }
+      .footer .row{
+        flex-direction: row;
+      }
+      .pd-r{
+        padding-top:10px;
+        padding-left: 34px;
+      }
+      .pd-l{
+        padding-top:10px;
+        padding-left: 40px;
       }
     }
-    @media  (max-width :700px ){
+    @media  (max-width : 960px){
+      .pd-r{
+        padding-top:10px;
+        padding-left: 34px;
+      }
+      .pd-l{
+        padding-top: 10px;
+        padding-left: 40px;
+      }
+      
+    }
+
+    @media  (max-width :760px ){
       .content-photo{
         margin-top: 30px;
         padding-bottom: 30px;
@@ -317,11 +339,84 @@
       .services-title{
         order:2;
         width: 100%;}
-      .pd-l, .pd-r{
-        padding-top:10px;
+      .pd-r {
+        padding-top: 10px;
         padding-left: 12px;
       }
+      .pd-l{
+        padding-top: 10px;
+        padding-left: 6px;
+        margin-bottom: 20px;
+      }
     }
+    @media  (max-width :760px ){
+      .content-photo-info {
+        margin-bottom: 40px;
+      }
+    }
+    /* FOOTER  */
+    footer {
+      background-color: #000c04;
+    }
+
+    .footer .footer-title {
+      color: #fff;
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+
+    .footer .footer-list li {
+      list-style: none;
+      margin-bottom: 5px;
+    }
+
+    .footer .footer-list p,
+    .footer .footer-list a {
+      font-weight: normal;
+      font-size: 16px;
+      color: #696969;
+      line-height: 28px;
+      padding: 0;
+    }
+
+    .footer .footer-list a:hover {
+      color: #fff;
+    }
+
+    .footer .social-icon {
+      margin-top: 3px;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+    }
+
+    .footer .social-icon li {
+      display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+
+    .footer .social-icon i:hover {
+      color: #fff;
+      transition: all 0.5s;
+    }
+
+    .footer .copy-footer {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      color: #696969; 
+    }
+
+    .footer .copy-footer a {
+      color: #f53626;
+      opacity: 0.9;
+    }
+
+
+
 
     #myBody{
         background-color:white;
@@ -396,7 +491,20 @@
     .dark a.btn-read:hover {
         color: #189A46;
     }
-
+    .dark .footer .footer-list p {
+        font-weight: normal;
+        font-size: 16px;
+        color: #c8c8c8cc;
+        line-height: 28px;
+        padding: 0;
+    }
+    .dark .footer .footer-list a {
+        font-weight: normal;
+        font-size: 16px;
+        color: #c8c8c8cc;
+        line-height: 28px;
+        padding: 0;
+    }
     </style>
 
 </head>
@@ -537,6 +645,134 @@
           </div>
         </div>
       </section>
+
+
+
+      <footer class="footer">
+        <div class="footer-bg-layer">
+          <div class="container">
+            <div class="row footer-top">
+              <div class="col-lg-6 col-md-5 footer-list mt-5">
+                <h6 class="footer-title">Contact information</h6>
+                <ul>
+                  <li>
+                    <p>
+                      <strong>Address</strong>
+                      : #135 block, Barnard St. Brooklyn, London 10036, UK
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Phone</strong>
+                      :
+                      <a href="tel:+(12)234-11-24">+(12)234-11-24</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Email</strong>
+                      :
+                      <a href="mailto: example@mail.com "> example@mail.com</a>
+                    </p>
+                  </li>
+                </ul>
+                <div class="social-footer mt-3">
+                  <ul class="social-icon">
+                    <li class="facebook">
+                      <a href="#link" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="twitter">
+                      <a href="#link" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="dribbble">
+                      <a href="#link" title="Dribbble">
+                        <i class="fa-brands fa-dribbble"></i>
+                      </a>
+                    </li>
+                    <li class="google">
+                      <a href="#link" title="Google">
+                        <i class="fa-brands fa-google"></i>
+                      </a>
+                    </li>
+                  </ul>
+    
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="row">
+                  <div class="col-sm-4 col-6 footer-list mt-5">
+                    <h6 class="footer-title">Company</h6>
+                    <ul>
+                      <li>
+                        <a href="about.html">About Us</a>
+                      </li>
+                      <li>
+                        <a href="blog.html">Blog Posts</a>
+                      </li>
+                      <li>
+                        <a href="services.html">Services</a>
+                      </li>
+                      <li>
+                        <a href="#pricing">Pricing</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 col-6 footer-list mt-5">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul>
+                      <li>
+                        <a href="contact.html">Contact Us</a>
+                      </li>
+                      <li>
+                        <a href="#signup">Create account</a>
+                      </li>
+                      <li>
+                        <a href="#learn">Care Center</a>
+                      </li>
+                      <li>
+                        <a href="#feedback">Site Feedack</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 footer-list mt-5">
+                    <h6 class="footer-title">Support</h6>
+                    <ul>
+                      <li>
+                        <a href="#URL">All Dogs</a>
+                      </li>
+                      <li>
+                        <a href="#URL">Care Advices</a>
+                      </li>
+                      <li>
+                        <a href="#URL">Care Support</a>
+                      </li>
+                      <li>
+                        <a href="#URL">Veterinary Help</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <div class="midd-footer align-center py-lg-4 py-3 mt-5">
+            <div class="container">
+              <p class="copy-footer text-center">
+                © 2020 Pooch Care. All Rights Reserved. Design by
+                <a href="https://w3layouts.com/">W3Layouts</a>
+              </p>
+            </div>
+          </div>
+    
+        </div>
+        </div>
+      </footer>
     
   <script>
     document.getElementById("switchButton").onclick = function () {
