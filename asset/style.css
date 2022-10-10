@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
+
 
 html, body {
     font-family: 'Jost', sans-serif;
@@ -111,6 +113,10 @@ img {
  a {
     text-decoration: none;
 background-color: transparent;
+}
+a a:hover {
+    text-decoration: none;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -245,9 +251,9 @@ header {
 }
 .poochCarousel .carousel-indicators li.active {
     background-color: #35a22c;
-    width: 30px;
-    height: 10px;
-    border-radius: 2px;
+    width:25px;
+height:10px;
+border-radius:15px;
 }
 
 .poochCarousel .btn1 {
@@ -311,8 +317,8 @@ transition: all 0.5s;
 .feature__icon i {
     font-size: 30px;
 }
-.feature  .card-title {
-    text-decoration:none;
+.feature .card-title {
+    text-decoration: none;
     font-size: 24px;
     font-weight: 600;
     margin-top: 25px;
@@ -323,7 +329,7 @@ transition: all 0.5s;
 
 .feature .card-title:hover {
     color: #189a46;
-    text-decoration: none;
+    text-decoration: none !important
 }
 .feature p {
     font-size: 19px;

@@ -9,10 +9,31 @@
     margin-left: auto;
   }
 }
+@media (max-width: 1200px) {
+  .poochCarousel .carousel-caption h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .poochCarousel .poochCarousel__caption1, 
+.poochCarousel .poochCarousel__caption3 {
+    position: absolute;
+    left: 3%;
+    top: 18%;
+    width: 60%;
+}
+
+.poochCarousel .poochCarousel__caption2, 
+.poochCarousel .poochCarousel__caption4 {
+    position: absolute;
+    left: 40%;
+    top: 18%;
+    width: 60%;
+}
+}
 @media (max-width: 991px) {
-    .header__pooch .navbar-toggler {
-        padding: 0;
-    }
+  .header__pooch .navbar-toggler {
+    padding: 0;
+  }
   .header__pooch .navbar-toggler-icon {
     line-height: 1.2em;
     color: #fff;
@@ -20,22 +41,35 @@
     background-color: #189a46;
     border-radius: 5px;
   }
+  .poochCarousel .carousel-caption h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
   .whyChooseUs .col__right {
     padding-top: 3rem;
   }
-  .header__pooch  .nav-item {
+  .header__pooch .nav-item {
     text-align: center;
   }
-  #poochNavbar  .nav-link:hover::after {
+  #poochNavbar .nav-link:hover::after {
     width: 0;
-}
-.whoWeAre .whoWeAre__right {
+  }
+  .whoWeAre .whoWeAre__right {
     margin-top: 50px;
-}
-.contact-grid {
+  }
+  .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 20px !important
+  }
+  .poochCarousel .poochCarousel__caption1, 
+.poochCarousel .poochCarousel__caption3,
+.poochCarousel .poochCarousel__caption2, 
+.poochCarousel .poochCarousel__caption4 {
+    position: absolute;
+    left: 13%;
+    top: 30%;
+    width: 100% !important
 }
 }
 
@@ -48,41 +82,52 @@
     margin-right: auto;
     margin-left: auto;
   }
-  .pb-lg-5, .py-lg-5 {
+  .container {
+    max-width: 960px;
+  }
+  .pb-lg-5,
+  .py-lg-5 {
     padding-bottom: 3rem !important;
-}
-.pt-lg-5, .py-lg-5 {
+  }
+  .pt-lg-5,
+  .py-lg-5 {
     padding-top: 3rem !important;
-}
-.pl-lg-5, .px-lg-5 {
+  }
+  .pl-lg-5,
+  .px-lg-5 {
     padding-left: 3rem !important;
-}
-.mb-lg-0, .my-lg-0 {
+  }
+  .mb-lg-0,
+  .my-lg-0 {
     margin-bottom: 0 !important;
-}
-.pl-lg-4, .px-lg-4 {
+  }
+  .pl-lg-4,
+  .px-lg-4 {
     padding-left: 1.5rem !important;
-}
-.mt-lg-0, .my-lg-0 {
+  }
+  .mt-lg-0,
+  .my-lg-0 {
     margin-top: 0 !important;
-}
-.pb-lg-3, .py-lg-3 {
+  }
+  .pb-lg-3,
+  .py-lg-3 {
     padding-bottom: 1rem !important;
-}
-.pt-lg-3, .py-lg-3 {
+  }
+  .pt-lg-3,
+  .py-lg-3 {
     padding-top: 1rem !important;
-}
-.text-lg-right {
+  }
+  .text-lg-right {
     text-align: right !important;
-}
-.pr-lg-4, .px-lg-4 {
+  }
+  .pr-lg-4,
+  .px-lg-4 {
     padding-right: 1.5rem !important;
-}
-.mb-lg-5, .my-lg-5 {
+  }
+  .mb-lg-5,
+  .my-lg-5 {
     margin-bottom: 3rem !important;
-}
-
-
+  }
 }
 
 @media (min-width: 768px) & (max-width: 991px) {
@@ -91,35 +136,56 @@
   .container-md {
     max-width: 720px;
   }
+  .container {
+    max-width: 720px;
+  }
   .pb-md-5,
   .py-md-5 {
     padding-bottom: 3rem !important;
   }
-  .pb-md-4, .py-md-4 {
+  .pb-md-4,
+  .py-md-4 {
     padding-bottom: 1.5rem !important;
-}
+  }
   .pt-md-5,
   .py-md-5 {
     padding-top: 3rem !important;
   }
-  .pt-md-4, .py-md-4 {
+  .pt-md-4,
+  .py-md-4 {
     padding-top: 1.5rem !important;
-}
-.mt-md-5, .my-md-5 {
+  }
+  .mt-md-5,
+  .my-md-5 {
     margin-top: 3rem !important;
-}
-.col-md-2 {
+  }
+  .col-md-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%;
-}
-.col-md-10 {
+  }
+  .col-md-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
-}
-.mt-md-4, .my-md-4 {
+  }
+  .mt-md-4,
+  .my-md-4 {
     margin-top: 1.5rem !important;
-}
+  }
+  .poochCarousel .poochCarousel__caption1,
+  .poochCarousel .poochCarousel__caption3 {
+    position: absolute;
+    left: 12%;
+    top: 18%;
+    width: 100%;
+  }
 
+  .poochCarousel .poochCarousel__caption2,
+  .poochCarousel .poochCarousel__caption4 {
+    position: absolute;
+    left: 12%;
+    top: 18%;
+    width: 100%;
+  }
 }
 
 @media (min-width: 576px) & (max-width: 767px) {
@@ -127,26 +193,40 @@
   .container-sm {
     max-width: 540px;
   }
-
+.container {
+  max-width: 540px;
+}
   .history .history__grids {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 667px) {
-    .history .history__grids {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        margin-top: 40px;
-    }
-  
-   
+  .history .history__grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 40px;
+  }
 }
 @media (max-width: 767px) {
-    .whoWeAre .whoWeAre__right-grids {
-       text-align: center;
-       padding-bottom: 20px;
-    }
+  .whoWeAre .whoWeAre__right-grids {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .poochCarousel .poochCarousel__caption1, 
+.poochCarousel .poochCarousel__caption3 {
+    position: absolute;
+    left: 12%;
+    top: 18%;
+    width: 70% !important
+}
 
+.poochCarousel .poochCarousel__caption2, 
+.poochCarousel .poochCarousel__caption4 {
+    position: absolute;
+    left: 12%;
+    top: 18%;
+    width: 70% !important
+}
 }
