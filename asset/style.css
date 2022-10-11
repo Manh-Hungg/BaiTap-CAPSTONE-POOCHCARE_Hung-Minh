@@ -233,6 +233,7 @@ button:hover{
     line-height: 2em;
     letter-spacing: 1px;
     margin-bottom: -4px;
+    padding-top: 60px;
 }
 .title-video p {
     text-align: center;
@@ -311,7 +312,6 @@ button:hover{
         margin-right: 10px;
         margin-left:  10px;
         margin: 50px 0;
-        border: 1px solid #f0f3f0;
     }
 }
 @media (max-width: 700px){
@@ -716,4 +716,179 @@ display: inline-block;
 
 
 
+#myBody{
+    background-color:white;
+}
+#switchButton {
+    background-color: #fff;
+    font-size: 22px;
+    color: #696969;
+    padding: 0;
+}
+#switchButton .fa-sun {
+    display: none;
+    
+}
+#switchButton .fa-moon {
+    display: block;
+}
+/* Dark Theme*/
+.dark#myBody{
+    background-color:#151414;
+}
+.dark #switchButton {
+    background-color: #151414;
+}
+.dark #switchButton .fa-sun {
+    display: block;
+    color: #afafaf;
+    font-size: 22px;
+}
+.dark .bg-light {
+  background-color: #151515 !important;
+}
+.dark #switchButton .fa-moon {
+    display: none;
+}
+.dark #poochNavbar .nav-link{
+    color: #ddd;
+}
+.dark .header__pooch{
+    background-color: #151515 ;
+}
+.dark h3{
+    color: #ddd;
+}
+.dark .card {
+    background-color: black;
+    color: white;
+}
+.dark .content-photo {
+    border-bottom: 1px solid #444;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+  }
 
+.dark a.btn-read {
+    font-size: 17px;
+    padding: 0;
+    border-bottom: 2px solid #189A46;
+    color: #ddd;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: 'Jost', sans-serif;
+}
+.dark a.btn-read:hover {
+    color: #189A46;
+}
+.dark .footer .footer-list p {
+    font-weight: normal;
+    font-size: 16px;
+    color: #c8c8c8cc;
+    line-height: 28px;
+    padding: 0;
+}
+.dark .footer .footer-list a {
+    font-weight: normal;
+    font-size: 16px;
+    color: #c8c8c8cc;
+    line-height: 28px;
+    padding: 0;
+}
+.dark .cont-detailshnyf h6{
+  color: #ddd;
+}
+.dark h4 {
+  color:#ddd;
+}
+.dark a.read{
+  color: #ddd;
+}
+.dark a.read:hover {
+    color: #189a46;
+}
+.dark p{
+  color: #afafaf;
+}
+.dark .feature{
+    background-color: #222;
+}
+.dark .feature .box{
+    padding: 40px 30px;
+    transition: all 0.5s ease 0s;
+    border-radius: 10px;
+    background-color: #151515;
+    position: relative;
+    margin-bottom: 30px;
+}
+.dark .feature .box:hover {
+    background-color: #222;
+}
+.dark .feature .card-title {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: block;
+    color: #ddd;
+}
+.dark .feature .card-title:hover {
+    color: #189a46;
+    text-decoration: none !important
+}
+.dark .whyChooseUs i {
+    font-size: 10px;
+    background-color: #222;
+    color: #189a46;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 12px;
+    display: inline-block;
+}
+.dark .whyChooseUs li{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ddd;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.dark .number-item p{
+    color: #fff;
+}
+.dark .card-item{
+    border-radius: 8px;
+    background-color: #151515;
+    text-align: center;
+}
+.dark .card-top h6 {
+    font-size: 25px;
+    color: #ddd !important;
+}
+
+.dark .card-top h4 {
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #189A46;
+}
+.dark .card-bot li{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    align-self: center;
+    padding-top: 6px;
+    color: #afafaf;
+}
+.dark .plan{
+    color:#222;
+}

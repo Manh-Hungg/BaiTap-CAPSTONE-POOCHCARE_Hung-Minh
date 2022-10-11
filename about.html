@@ -321,10 +321,153 @@
       color: #f53626;
       opacity: 0.9;
     }
+    
+
+    #myBody{
+        background-color:white;
+    }
+    #switchButton {
+        background-color: #fff;
+        font-size: 22px;
+        color: #696969;
+        padding: 0;
+    }
+    #switchButton .fa-sun {
+        display: none;
+        
+    }
+    #switchButton .fa-moon {
+        display: block;
+    }
+    /* Dark Theme*/
+    .dark#myBody{
+        background-color:#151414;
+    }
+    .dark #switchButton {
+        background-color: #151414;
+    }
+    .dark #switchButton .fa-sun {
+        display: block;
+        color: #afafaf;
+        font-size: 22px;
+    }
+    .dark .bg-light {
+      background-color: #151515 !important;
+    }
+    .dark #switchButton .fa-moon {
+        display: none;
+    }
+    .dark #poochNavbar .nav-link{
+        color: #ddd;
+    }
+    .dark .header__pooch{
+        background-color: #151515 ;
+    }
+    .dark h3{
+        color: #ddd;
+    }
+    .dark .card {
+        background-color: black;
+        color: white;
+    }
+    .dark .content-photo {
+        border-bottom: 1px solid #444;
+        margin-top: 80px;
+        padding-bottom: 80px;
+        align-items: center;
+      }
+   
+    .dark a.btn-read {
+        font-size: 17px;
+        padding: 0;
+        border-bottom: 2px solid #189A46;
+        color: #ddd;
+        transition: 0.3s ease-in-out;
+        font-weight: 600;
+        border-radius: 0;
+        margin-top: 20px;
+        display: inline-block;
+        text-transform: capitalize;
+        font-family: 'Jost', sans-serif;
+    }
+    .dark a.btn-read:hover {
+        color: #189A46;
+    }
+    .dark .footer .footer-list p {
+        font-weight: normal;
+        font-size: 16px;
+        color: #c8c8c8cc;
+        line-height: 28px;
+        padding: 0;
+    }
+    .dark .footer .footer-list a {
+        font-weight: normal;
+        font-size: 16px;
+        color: #c8c8c8cc;
+        line-height: 28px;
+        padding: 0;
+    }
+    .dark .cont-detailshnyf h6{
+      color: #ddd;
+    }
+    .dark h4 {
+      color:#ddd;
+    }
+    .dark a.read{
+      color: #ddd;
+    }
+    .dark p{
+      color: #afafaf;
+    }
+    .dark .whoWeAre__right-grids h6 a {
+      text-align: left;
+      margin-bottom: 0;
+      color: #ddd;
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    .dark .whoWeAre h6 a:hover {
+      color: #189a46;
+      text-decoration: none;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: #000c04;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    }
+    .dark .team{
+      background-color: #222;
+    }
+    
+    .dark .ourExperts .social-left a {
+      display: inline-block;
+      margin-right: 6px;
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+      line-height: 30px;
+      text-align: center;
+      background: #222;
+      color: #189a46;
+      transition: 0.3s linear;
+    }
+
+    .dark .ourExperts .social-left a:hover {
+      
+      background-color: #189a46;
+      color: #fff;
+    }
+    .dark a.read:hover {
+    color: #189a46;
+}
+
   </style>
 </head>
 
-<body>
+<body id="myBody">
   <header class="header__pooch">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <h2 class="navbar-brand">
@@ -369,7 +512,13 @@
             <a class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <!-- icon  -->
+            <div class="container">
+              <div >
+                <button class="btn" id="switchButton"  title="Click to switch theme">
+                  <i class="fa-regular fa-moon"></i>
+                  <i class="fa-regular fa-sun"></i>
+                </button>
+          </div>
           </li>
         </ul>
       </div>
@@ -788,6 +937,13 @@
     </div>
     </div>
   </footer>
+
+
+  <script>
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+    };
+  </script>
 </body>
 
 </html>
