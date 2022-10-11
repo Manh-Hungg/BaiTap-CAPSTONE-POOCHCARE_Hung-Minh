@@ -422,7 +422,12 @@ a.read:hover {
 .mt-2, .my-2 {
     margin-top: 0.5rem !important;
 }
-
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
 p {
     margin: 0;
     padding: 0;
@@ -891,4 +896,163 @@ display: inline-block;
 }
 .dark .plan{
     color:#222;
+}
+
+
+/* testimonials  */
+.testimonials .title {
+    text-align: center;
+}
+.testimonials .container {
+    margin: auto;
+    width: 80%;
+}
+.testimonials {
+    background-color:#f9f7fe;
+    padding-bottom: 70px;
+    margin-top: 100px;
+}
+.testimonials__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+.testimonial-item {
+    background-color: #fff;
+    display: block;
+    margin: 0;
+    padding: 40px 50px;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+    overflow: hidden;
+    text-align: left;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.testimonials blockquote {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+q::before {
+    font-size: 50px;
+    color: #189a46;
+    line-height: .8;
+    padding-top: 8px;
+    font-weight: 600;
+    display: inline-block;
+    font-family: "Merriweather", serif;
+}
+.testimonials .testi-des {
+    display: flex;
+    text-align: center;
+}
+.test-img {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonial .peopl {
+    margin: 0;
+    margin-left: 20px;
+    text-align: left;
+}
+.align-self {
+    align-self: center;
+}
+.testimonials .peopl h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+.testimonials p.indentity {
+    color: #777;
+    font-size: 17px;
+    font-style: normal;
+    margin-bottom: 0;
+    text-align: left;
+    opacity: 0.8;
+}
+.testimonial-item q {
+    color:#696969 ;
+}
+
+/* updated */
+.updated__content {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+.updated__content p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.updated__content input {
+    font-size: 16px;
+    color: #189a46;
+    border-radius: 10px;
+    padding: 0px 20px;
+    height: 60px;
+    flex-basis: 70%;
+    background: #fff;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-style {
+    float: right;
+  }
+  .btn-style {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: #189a46;
+    border-color: #189a46;
+  }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #116e32;
+    border-color: #116e32;
+  }
+  .subscribe-wthree-field {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+.subscribe-wthree button {
+    flex-basis: 27%;
 }

@@ -71,6 +71,9 @@
       top: 30%;
       width: 100% !important
   }
+  .testimonial-item {
+    margin-bottom: 30px;
+  }
   }
   
   @media (min-width: 992px) & (max-width: 1199px) {
@@ -105,6 +108,12 @@
     .px-lg-4 {
       padding-left: 1.5rem !important;
     }
+    .pb-lg-4, .py-lg-4 {
+      padding-bottom: 1.5rem !important;
+  }
+  .pt-lg-4, .py-lg-4 {
+    padding-top: 1.5rem !important;
+}
     .mt-lg-0,
     .my-lg-0 {
       margin-top: 0 !important;
@@ -128,6 +137,12 @@
     .my-lg-5 {
       margin-bottom: 3rem !important;
     }
+    .pb-lg-0, .py-lg-0 {
+      padding-bottom: 0 !important;
+  }
+  .d-md-flex {
+    display: flex !important;
+}
   }
   
   @media (min-width: 768px) & (max-width: 991px) {
@@ -171,6 +186,12 @@
     .my-md-4 {
       margin-top: 1.5rem !important;
     }
+    .pb-md-3, .py-md-3 {
+      padding-bottom: 1rem !important;
+  }
+.pt-md-3, .py-md-3 {
+    padding-top: 1rem !important;
+}
     .poochCarousel .poochCarousel__caption1,
     .poochCarousel .poochCarousel__caption3 {
       position: absolute;
@@ -186,6 +207,13 @@
       top: 18%;
       width: 100%;
     }
+    .d-md-flex {
+      display: flex !important;
+  }
+  .subscribe-wthree-field {
+    display: flex;
+    justify-content: space-between;
+}
   }
   
   @media (min-width: 576px) & (max-width: 767px) {
@@ -228,5 +256,8 @@
       left: 12%;
       top: 18%;
       width: 70% !important
+  }
+  .subscribe-wthree-field {
+    display: block;
   }
   }
