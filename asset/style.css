@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+.pb-50{
+    padding-bottom: 50px !important;
+}
+.pt-50{
+    padding-top: 50px !important;
+}
+.pd-100{
+    padding-bottom: 100px;
+}
+.mg-50{
+    margin: -50px 0 !important;
+}
+.mg-t-50{
+    margin-top: 50px !important;
+}
+.mg-l-20{
+    margin-left: -20px;
+}
+.mg-r-20{
+    margin-right: -20px;
+}
+.border-card{
+    box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%) !important;
+    z-index: 1;
+}
+.cl-b{
+    color: #000c04 !important;
+}
+.cl-w{
+    color: #fff !important;
+}
+.position-relative{
+  position: relative;
+}
+.position-absolute{
+  position: absolute;
+}
+.title-top{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #f53626;
+}
+.title-bot{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: #000c04;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.bg-g{
+    background-color:#189A46;
+}
+
+.p{    
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+    font-family: 'Jost', sans-serif;
+    
+}
+
+.btn-style{
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius:10px;
+    color: #fff;
+    background:#189A46;
+    border: none;
+}
+
+.text-center {
+    text-align: center !important;
+}
+.dis-none{
+    display: none !important;
+}
+
+
+
+
+
+
+
+.number {
+    background-color: #189A46;
+    padding: 48px 0;
+}
+.number-content{
+    justify-content: space-around;
+    display: flex;
+}
+.number-item{
+    text-align: center;
+    border-radius: 8px;
+}
+.number-item h4{
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+.number-item p {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+
+
+
+.plan{
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.card-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:  5px;
+    padding: 0 50px;
+}
+.card-item{
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    
+}
+.card-top{
+    padding: 48px 40px 8px 40px;
+    border-radius: 8px 8px 0px 0px;
+} 
+.card-top h5{
+    font-size: 15px;
+    line-height: 20px;
+    color:#189A46;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius:12px;
+    margin-top: 30px;
+}
+.card-top h6{
+    font-size: 25px;
+}
+.card-top h4{
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    color:#189A46;
+}
+.card-top span{
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+.card-top label{
+    font-size: 25px;
+    vertical-align: text-top;
+}
+.list-card{
+    list-style: none;
+}
+.card-bot{
+    padding: 32px 40px 56px 40px;
+}
+
+.card-bot ul{
+    margin-bottom: 5px;
+    color: #304659;
+}
+.card-bot li{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    align-self: center;
+    padding-top: 6px;
+}
+.card-bot button{
+    margin-top: 32px;
+}
+.card-bot button:focus{
+    box-shadow: 0 0 0 0.2rem rgb(15 162 67 / 65%);
+}
+button:hover{
+    background-color: #116E32;
+}
+
+
+
+.w3l-index5 .new-block {
+  display: grid;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.title-video h6{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    margin-bottom: -4px;
+}
+.title-video p {
+    text-align: center;
+    margin-top: -30px;
+}
+.video-content{
+    padding : 0 120px;
+}
+.video-sub-content img {
+    max-width: 100%;
+    border-radius: 10px ;
+}
+.video-sub-content a{
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px); 
+}
+.video-sub-content a:hover{
+    text-decoration: none;
+    color: #189A46;
+}
+
+.video-sub-content .video-play-icon{
+    background: #fff;
+    display:inline-block;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: ripple 1s linear infinite;
+    animation: ripple 1s linear infinite;
+}
+
+
+
+.video-sub-content .video-play-icon span{
+    color:#189A46;
+}
+.video-sub-content span .video-play-icon:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 1280px){
+    .container {
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width: 991px){
+    .container{
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .video-content {
+        padding: 0 30px;
+    }
+    .btn-card {
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .card-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin: 50px auto 0;
+        width: 70%
+    }
+    .card-item{
+        margin-right: 10px;
+        margin-left:  10px;
+        margin: 50px 0;
+        border: 1px solid #f0f3f0;
+    }
+}
+@media (max-width: 700px){
+    .container{
+        max-width: 720px;
+    }
+    .video-content {
+        padding: 0 20px;
+    }
+    .card-content {
+        width: 80%
+    }
+}
+@media (max-width: 600px){
+    .card-content {
+        width: 85%
+    }
+}
+@media (max-width: 550px){
+    .container {
+        max-width: 540px;
+    }
+    .video-content {
+        padding: 0 10px;
+    }
+    .card-content {
+        width: 100%
+    }
+}
+
+
+
+
+
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgb(15 162 66 / 16%), 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
+    }
+}
+
+
+
+
+
+
+
