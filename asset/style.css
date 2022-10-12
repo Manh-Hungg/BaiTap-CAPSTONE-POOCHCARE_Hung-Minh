@@ -567,6 +567,7 @@ header {
 
 .poochCarousel .carousel-item {
     width: 100vw;
+    height: 95vh;
 }
 .poochCarousel .carousel-item>img {
     height: 100%; 
@@ -987,6 +988,9 @@ q::before {
 }
 
 /* updated */
+.updated {
+    padding-bottom: 100px;
+}
 .updated__content {
     margin: auto;
     width: 60%;
@@ -998,6 +1002,7 @@ q::before {
     font-size: 20px;
 }
 .updated__content input {
+    display: flex;
     font-size: 16px;
     color: #189a46;
     border-radius: 10px;
@@ -1057,6 +1062,65 @@ q::before {
     flex-basis: 27%;
 }
 
+/* FOOTER  */
+footer {
+    background-color: #000c04;
+  }
+
+  .footer .footer-title {
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  .footer .footer-list li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+
+  .footer .footer-list p,
+  .footer .footer-list a {
+    font-weight: normal;
+    font-size: 16px;
+    color: #696969;
+    line-height: 28px;
+  }
+
+  .footer .footer-list a:hover {
+    color: #fff;
+  }
+
+  .footer .social-icon {
+    margin-top: 3px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  .footer .social-icon li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  .footer .social-icon i:hover {
+    color: #fff;
+    transition: all 0.5s;
+  }
+
+  .footer .copy-footer {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #696969; margin-bottom: 0;
+  }
+
+  .footer .copy-footer a {
+    color: #f53626;
+    opacity: 0.9;
+  }
 
 .backToTop {
     width: 60px;
