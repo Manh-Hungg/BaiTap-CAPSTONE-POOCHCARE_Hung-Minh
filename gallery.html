@@ -377,7 +377,29 @@
         line-height: 28px;
         padding: 0;
     }
+    .backToTop {
+    width: 60px;
+    height: 60px;
+    background: #189A46;
+    border-radius: 8px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 25px;
+    bottom: 100px;
+    color: #fff;
+    transition: all .2s;
 
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 50px;
+    transition: 0.3s ease-out;
+  }
+  .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
 
 
     </style>
@@ -634,6 +656,14 @@
     </div>
   </footer>
 
+  <a href="#" class="backToTop cd-top text-replace js-cd-top">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+
+
+  <!-- BACK TO TOP JS -->
+ <script src="./asset/js/main.js"></script>
+ <script src="./asset/js/util.js"></script>
 
   <script>
     document.getElementById("switchButton").onclick = function () {
