@@ -389,6 +389,9 @@ a.read:hover {
     font-weight: 600;
     line-height: 48px;
 }
+.cl-w{
+   color: white !important; 
+}
 .mt-3,
 .my-3 {
     margin-top: 1rem !important
@@ -452,7 +455,7 @@ a a:hover {
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5{
     margin: 0;
     padding: 0;
     color: #000c04;
@@ -876,6 +879,9 @@ display: inline-block;
 }
 .dark .card-top h6 {
     font-size: 25px;
+    color: #ddd ;
+}
+.dark .cl-b{
     color: #ddd !important;
 }
 
@@ -898,7 +904,17 @@ display: inline-block;
 .dark .plan{
     color:#222;
 }
-
+.dark .testimonials {
+    background-color: #222;
+    padding-bottom: 70px;
+    margin-top: 100px;
+}
+.dark .testimonial-item {
+    background-color: #151515;
+}
+.dark .updated__content h1{
+    color: #ddd;
+}
 
 /* testimonials  */
 .testimonials .title {
@@ -1029,9 +1045,7 @@ q::before {
     border-radius: 0.25rem;
     transition: 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.btn-style {
-    float: right;
-  }
+
   .btn-style {
     padding: 12px 35px;
     font-size: 18px;
