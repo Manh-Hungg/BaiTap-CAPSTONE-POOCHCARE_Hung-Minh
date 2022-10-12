@@ -94,6 +94,75 @@
       padding-bottom: 80px;
       align-items: center;
     }
+    header {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header__content {
+    margin: auto;
+    
+
+}
+.header__pooch .navbar-brand a {
+    font-size: 34px;
+    color:#189a46;
+    font-weight: 700;
+    text-decoration: none;
+}
+.header__pooch .navbar-brand a:hover {
+    color:#189a46;
+    
+}
+
+#poochNavbar .nav-link i {
+    font-size: 12px;
+}
+
+/* trước hover  */
+#poochNavbar .nav-link::after {
+    content: '';
+    width: 0;
+    height: 1.5px;
+    background: #189a46;
+    display: block;
+    transition: all 0.5s;
+}
+#poochNavbar .nav-link {
+    color: #000;
+}
+
+/* sau hover  */
+#poochNavbar  .nav-link:hover::after {
+    width: 100%;
+}
+#poochNavbar  .nav-link:hover {
+    color: #189a46;
+}
+
+#poochNavbar .active .nav-link {
+   color: #189a46;
+}
+
+#poochNavbar a {
+    padding: 0 15px;
+    font-size: 18px;
+}
+.header__pooch .navbar-brand {
+    padding-left: 70px;
+}
+.header__pooch .navbar-nav {
+  text-align: center;
+    padding: 5px 70px 0 0;
+}
+.navbar-light .navbar-toggler {
+      color: white;  
+      background-color: #189A46;
+    }
 
     
 
@@ -141,85 +210,6 @@
       line-height: 48px;
       text-transform: capitalize;
     }
-
-
-    header {
-      height: 90px;
-      transition: all 0.4s ease 0s;
-      box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
-      display: grid;
-      align-items: center;
-      padding: 0px;
-    }
-    header.nav-fixed{
-      height: 80px;
-      background-color: #fff;
-    }
-
-    .fixed-top {
-      position: fixed;
-      top: 40px;
-      right: 0;
-      left: 0;
-      z-index: 1030;
-      align-items: center;
-    }
-    .header__content {
-        margin: auto;
-    }
-    .bg-c-w{
-      background-color: #fff!important;
-    
-    }
-    .header__pooch .navbar-brand {
-        font-size: 34px;
-        color:#189a46;
-        font-weight: 700;
-    }
-    #poochNavbar .nav-link i {
-        font-size: 12px;
-    }
-    
-    /* trước hover  */
-    #poochNavbar .nav-link::after {
-        content: '';
-        width: 0;
-        height: 1.5px;
-        background: #189a46;
-        display: block;
-        transition: all 0.5s;
-    }
-    #poochNavbar .nav-link {
-        color: #000;
-    }
-    
-    /* sau hover  */
-    #poochNavbar  .nav-link:hover::after {
-        width: 100%;
-    }
-    #poochNavbar  .nav-link:hover {
-        color: #189a46;
-    }
-    
-    #poochNavbar .active .nav-link {
-       color: #189a46;
-    }
-    
-    #poochNavbar a {
-        padding: 0 15px;
-        font-size: 18px;
-    }
-    .navbar{
-      padding: 0 110px;
-    }
-    .header__pooch .navbar-brand {
-        padding-left: 70px;
-    }
-    .header__pooch .navbar-nav {
-        
-        padding: 5px 70px 0 0;
-    }
-
 
 
     .page-intro{
@@ -509,35 +499,43 @@
 
 </head>
 <body id="myBody">
-  <header class="header__pooch fixed-top nav-fixed">
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <h2 class="navbar-brand">Pooch Care
+  <header class="header__pooch">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <h2 class="navbar-brand">
+        <a href="index.html">Pooch Care</a>
+
       </h2>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#poochNavbar"
         aria-controls="poochNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+
       </button>
+      <!-- <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        
+    </button> -->
 
       <div class="collapse navbar-collapse" id="poochNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="blog.html">
               <span>Blog</span>
               <i class="fa-solid fa-chevron-down"></i>
             </a>
-           
+
 
             <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
               Blog
@@ -549,16 +547,16 @@
             </div> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
             <div class="container">
-                <div >
-                  <button class="btn" id="switchButton"  title="Click to switch theme">
-                    <i class="fa-regular fa-moon"></i>
-                    <i class="fa-regular fa-sun"></i>
-                  </button>
-            </div>
+              <div>
+                <button class="btn" id="switchButton" title="Click to switch theme">
+                  <i class="fa-regular fa-moon"></i>
+                  <i class="fa-regular fa-sun"></i>
+                </button>
+              </div>
           </li>
 
         </ul>
