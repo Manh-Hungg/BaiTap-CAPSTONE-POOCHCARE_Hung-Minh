@@ -96,8 +96,14 @@
 .dis-none{
     display: none !important;
 }
-
-
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width:auto;
+    /* max-width: 500px; */
+    margin: 20px auto;
+  }
 
 
 
@@ -298,6 +304,7 @@ button:hover{
     .btn-card {
         display: none;
     }
+
 }
 
 @media (max-width: 800px){
