@@ -230,6 +230,11 @@
 #poochNavbar  .nav-link:hover::after {
     width: 100%;
 }
+@media (max-width:991px ){
+  #poochNavbar .nav-link:hover::after {
+      width: 0 ;
+  }
+}
 #poochNavbar  .nav-link:hover {
     color: #189a46;
 }
@@ -523,7 +528,7 @@
         <span class="navbar-toggler-icon"></span>
 
       </button>
-      <!-- <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+       <!-- <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
         <span class="navbar-toggler-icon fa icon-close fa-times"></span>
         
@@ -560,8 +565,8 @@
             </div> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="contact.html">Contact</a>
-          </li>
+            <a class="nav-link" href="contact.html"  >Contact</a>
+          </li> 
           <li class="nav-item">
             <div class="container">
               <div>
@@ -575,7 +580,9 @@
         </ul>
 
       </div>
-    </nav>
+    </nav> 
+
+   
   </header>
 
     

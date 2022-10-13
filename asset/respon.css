@@ -52,8 +52,8 @@
       text-align: center;
     }
     #poochNavbar .nav-link:hover::after {
-      width: 0;
-    }
+      width: 0 ;
+  }
     .whoWeAre .whoWeAre__right {
       margin-top: 50px;
     }
