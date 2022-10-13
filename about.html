@@ -35,6 +35,85 @@
 
 
   <style>
+    /* HEADER  */
+    header {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header__content {
+    margin: auto;
+    
+
+}
+.header__pooch .navbar-brand a {
+    font-size: 34px;
+    color:#189a46;
+    font-weight: 700;
+    text-decoration: none;
+}
+.header__pooch .navbar-brand a:hover {
+    color:#189a46;
+    
+}
+
+#poochNavbar .nav-link i {
+    font-size: 12px;
+}
+
+/* trước hover  */
+#poochNavbar .nav-link::after {
+    content: '';
+    width: 0;
+    height: 1.5px;
+    background: #189a46;
+    display: block;
+    transition: all 0.5s;
+}
+#poochNavbar .nav-link {
+    color: #000;
+}
+
+/* sau hover  */
+#poochNavbar  .nav-link:hover::after {
+    width: 100%;
+}
+@media (max-width:991px) {
+  #poochNavbar  .nav-link:hover::after {
+    width: 0;
+}
+  
+}
+#poochNavbar  .nav-link:hover {
+    color: #189a46;
+}
+
+#poochNavbar .active .nav-link {
+   color: #189a46;
+}
+
+#poochNavbar a {
+    padding: 0 15px;
+    font-size: 18px;
+}
+.header__pooch .navbar-brand {
+    padding-left: 70px;
+}
+.header__pooch .navbar-nav {
+  text-align: center;
+    padding: 5px 70px 0 0;
+}
+.navbar-light .navbar-toggler {
+      color: white;  
+      background-color: #189A46;
+    }
+
+
+
     /* PAGE INTRO */
     .page-intro {
       margin-top: 90px;
