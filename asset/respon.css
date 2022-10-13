@@ -57,8 +57,11 @@
     .whoWeAre .whoWeAre__right {
       margin-top: 50px;
     }
-    .contact-grid {
+    .d-grid {
       display: grid;
+    }
+    .contact-grid {
+      
       grid-template-columns: 1fr;
       grid-gap: 20px !important
     }
