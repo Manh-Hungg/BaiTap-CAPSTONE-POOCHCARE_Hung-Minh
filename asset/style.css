@@ -501,9 +501,10 @@ h1, h2, h3, h4, h5{
 }
 /* HEADER  */
 
+
 header {
     position: fixed;
-    top: 40px;
+    top:0;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -529,6 +530,47 @@ header {
 #poochNavbar .nav-link i {
     font-size: 12px;
 }
+#nav{display:inline-block;}
+#nav,.subnav{list-style-type:none;
+
+}
+#nav >li{ display: inline-block;}
+
+#nav li{
+    position:relative
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav>li >a{color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height:46px;
+    padding:0 24px;
+    display: block;
+}
+#nav> li:hover> a,#nav .subnav li:hover a  {
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav{
+    display: none;
+   position: absolute;
+   top:100%;
+   left: 0;
+   min-width: 160px ;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+#nav .subnav a  {
+    color: #000;
+    padding:0 12px;
+    line-height: 38px;
+}
+
 
 /* trước hover  */
 #poochNavbar .nav-link::after {
@@ -556,7 +598,7 @@ header {
 }
 
 #poochNavbar a {
-    padding: 0 15px;
+    padding: 3 15px;
     font-size: 18px;
 }
 .header__pooch .navbar-brand {
